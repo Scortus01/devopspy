@@ -18,7 +18,6 @@ class Modulo(BaseModel):
     nivel: str
 
 
-
 class Curso(BaseModel):
     id: int
     titulo: str
