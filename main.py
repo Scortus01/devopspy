@@ -11,12 +11,12 @@ create_curso_table()
 app.title = "Cursos API"
 app.version = "0.0.1"
 
+
 class Modulo(BaseModel):
     id: int
     nombre: str
     duracion: int
     nivel: str
-
 
 class Curso(BaseModel):
     id: int
@@ -48,6 +48,7 @@ def create_curso(curso: Curso):
 @app.on_event("shutdown")
 def shutdown_event():
     close_connection()
+
 
 if __name__ == "__main__":
     import uvicorn
