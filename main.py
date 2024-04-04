@@ -17,6 +17,8 @@ class Modulo(BaseModel):
     duracion: int
     nivel: str
 
+
+
 class Curso(BaseModel):
     id: int
     titulo: str
